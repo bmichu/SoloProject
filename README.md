@@ -1,2 +1,2 @@
 # Modul-SoloProject
-kodilla - modul 9: solo project
+kodilla - Solo Project from beginning
