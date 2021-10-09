@@ -1,0 +1,43 @@
+.view-general {
+	.general-stats-row {
+		margin: 20px 0 60px 0;
+	}
+	.general-stats {
+		display: flex;
+		width: 100%;
+		border-bottom: 1px solid $container-background-color;
+		justify-content: space-between;
+		margin-top: 30px;
+		padding-bottom: 10px;
+	}
+	.general-stat-number {
+		color: $paragraph-color2;
+	}
+	canvas {
+		max-height: 500px;
+	}
+}
+
+@media(max-width: 767px) {
+	.p-bold {
+		margin-left: 20px;
+	}
+	.general-stat-number {
+		margin-right: 20px;
+	}
+}
+
+@media(min-width: 768px) {
+	.p-bold {
+		margin-left: 0;
+	}
+	.general-stat-number {
+		margin-right: 0;
+	}
+}
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
+}

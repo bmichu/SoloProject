@@ -1,0 +1,72 @@
+button {
+	border: none;
+	outline: none;
+	color: $button-text-color;
+	font-size: $button-font-size;
+	font-family: $button-font;
+	border-radius: 5px;
+}
+
+.button-active {
+	background-color: $active-button-color;
+	&:hover {
+		background-color: $active-button-color-hover;
+	}
+}
+
+.button-inactive {
+	background-color: $inactive-button-color;
+	&:hover {
+		background-color: $inactive-button-color-hover;
+	}
+}
+
+.button-inactive2 {
+	background-color: $inactive-button-color-hover;
+	&:hover {
+		background-color: $inactive-button-color;
+	}
+}
+
+.button-icon {
+	font-family: $icon-font;
+	font-size: $button-font-size;
+	margin: 0;
+}
+
+.btn-button {
+	height: 35px;
+	font-size: $add-button-text-size;
+	margin: 20px 0;
+}
+
+.add-button {
+	@extend .btn-button;
+	width: 120px;
+}
+
+.save-button {
+	@extend .btn-button;
+	width: 100px;
+}
+
+.copy-button {
+	@extend .btn-button;
+	width: 180px;
+}
+
+.add-button-bottom {
+	margin: 20px 15px 20px -15px;
+}
+
+.button-row {
+	display: flex;
+	justify-content: center;
+}
+
+.button-online {
+	background-color: $dot-green;
+	font-size: $paragraph-font-size3;
+	width: 60px;
+	height: 20px;
+}

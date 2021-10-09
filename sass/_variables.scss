@@ -1,0 +1,113 @@
+/* colors */
+$white1: #FFFFFF;
+$white2: #FAFAFA;
+$black1: #000000;
+$black2: #333333;
+$grey1: #979797;
+$grey2: #BABABA;
+$grey3: #E3E3E3;
+$orange1: #F58220;
+$orange2: #FFA200;
+$green1: #04AE00;
+$green2: #74B67A;
+$green3: #96CC9B;
+$red1: #FF0000;
+$red2: #DE5252;
+$red3: #EC7171;
+$blue1: #56819F;
+$blue2: #80BFCA;
+$magenta1: #E600F4;
+$yellow1: #FFFF00;
+
+$button-text-color: $white1;
+$active-button-color: $orange1;
+$active-button-color-hover: $orange2;
+$inactive-button-color: $grey3;
+$inactive-button-color-hover: $grey1;
+$menu-background-color: $black1;
+$menu-text-color: $grey1;
+$menu-background-color-hover: $black2;
+$menu-text-color-hover: $white1;
+$menu-line-color: $black2;
+$hamburger-color: $grey1;
+$header-text-color: $grey1;
+$paragraph-color: $grey1;
+$paragraph-color2: $black1;
+$paragraph-alt-color: $red1;
+$inactive-input-color: $grey2;
+$link-color: $blue1;
+$dot-green: $green1;
+$dot-orange: $orange1;
+$dot-blue: $blue1;
+$topbar-background-color: $white1;
+$topbar-text-color: $grey1;
+$topbar-border-color: $grey3;
+$body-background-color: $grey3;
+$container-background-color: $grey3;
+$page-background-color: $white2;
+$calendar-icon-color: $black1;
+$links-icon-color1: $orange1;
+$links-icon-color2: $grey1;
+$table-border: $grey2;
+$table-border-background-hover: $grey3;
+$focus-input-border-color: $grey1;
+$input-valid-color: $green2;
+$input-invalid-color: $red2;
+$scrollbar-color: $grey1;
+$scrollbar-background-color: $grey3;
+$checkbox-checked-color: $green1;
+$checkbox-unchecked-color: $white1;
+$range-color: $orange1;
+$bubble-up-color: $grey3;
+$bubble-down-color: $grey1;
+
+
+/* font sizes */
+$menu-font-size: 16px;
+$menu-header-font-size: 30px;
+$hamburger-font-size: 25px;
+$menu-icon-font-size: 16px;
+$topbar-icon-font-size: 18px;
+$h1-font-size: 24px;
+$h2-font-size: 20px;
+$h3-font-size: 16px;
+$h4-font-size: 14px;
+$h5-font-size: 12px;
+$h6-font-size: 10px;
+$paragraph-font-size: 16px;
+$paragraph-font-size2: 14px;
+$paragraph-font-size3: 12px;
+$links-font-size: 16px;
+$button-font-size: 14px;
+$add-button-text-size: 18px;
+$calendar-icon-size: 12px;
+$links-icon-size: 14px;
+$input-font-size: 16px;
+$table-text-size: 12px;
+$table-icon-size: 8px;
+
+
+/* fonts */
+@font-face {
+	font-family: 'GlyphterFont';
+	src: url('../fonts/Glyphter.woff')  format('woff'),
+		 url('../fonts/Glyphter.ttf')  format('truetype');
+}
+@font-face {
+	font-family: 'ReklameScript';
+	src: url('../fonts/Reklame_Script_Regular_DEMO.ttf')  format('truetype');
+}
+
+$arial: Arial, Helvetica, sans-serif;
+$tahoma: Tahoma, Geneva, sans-serif;
+$verdana: Verdana, Geneva, sans-serif;
+$glypher: GlyphterFont, sans-serif;
+$reklamescript: ReklameScript, sans-serif;
+
+$menu-font: $verdana;
+$menu-header-font: $reklamescript;
+$icon-font: $glypher;
+$header-font: $arial;
+$paragraph-font: $tahoma;
+$links-font: $tahoma;
+$button-font: $tahoma;

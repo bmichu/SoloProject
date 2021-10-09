@@ -1,0 +1,73 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font;
+	color: $header-text-color;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: $h1-font-size;
+}
+
+h2 {
+	font-size: $h2-font-size;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4 {
+	font-size: $h4-font-size;
+}
+
+h5 {
+	font-size: $h5-font-size;
+}
+
+h6 {
+	font-size: $h6-font-size;
+}
+
+p {
+	margin: 0;
+	font-family: $paragraph-font;
+	color: $paragraph-color;
+	font-size: $paragraph-font-size;
+}
+
+.p-bold {
+	font-weight: bold;
+}
+
+a {
+	margin: 0;
+	font-family: $links-font;
+	color: $link-color;
+	font-size: $links-font-size;
+	text-decoration: none;
+}
+
+.text-icon {
+	font-family: $icon-font;
+}
+
+.links-icon {
+	font-family: $icon-font;
+	font-size: $links-icon-size;
+}
+
+.links-icon1 {
+	@extend .links-icon;
+	color: $links-icon-color1;
+}
+
+.links-icon2 {
+	@extend .links-icon;
+	color: $links-icon-color2;
+}
+
+.table-icon {
+	font-family: $icon-font;
+	font-size: $table-text-size;
+	margin-left: 10px;
+}

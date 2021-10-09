@@ -1,0 +1,55 @@
+.view-personal-data {
+	.personal-data-row {
+		padding: 40px 0;
+		border-bottom: 1px solid $container-background-color;
+	}
+	.field {
+		padding: 0 50px 10px 0px;
+	}
+	label {
+		width: 30%;
+	}
+	input, select {
+		width: 69%;
+	}
+}
+
+@media(max-width: 767px) {
+	.view-personal-data {
+		label, input, select {
+			display: block;
+			width: 100%;
+		}
+		label {
+			height: 20px;
+		}
+		.field {
+			padding-left: 20px;
+			padding-right: 100px;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	.view-personal-data {
+		.field {
+			padding-right: 25px;
+		}
+	}
+}
+
+@media(min-width: 992px) {
+	.view-personal-data {
+		.field {
+			padding-right: 50px;
+		}
+	}
+}
+
+@media(min-width: 1200px) {
+	.view-personal-data {
+		.field {
+			padding-right: 75px;
+		}
+	}
+}

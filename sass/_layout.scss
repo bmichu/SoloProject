@@ -1,0 +1,124 @@
+.container {
+	background-color: $container-background-color;
+	overflow: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-active {
+	display: block;
+}
+
+.page-inactive {
+	display: none;
+}
+
+.view-page {
+	background-color: $page-background-color;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	display: none;
+}
+
+.overlay.show-popup {
+	display: flex;
+}
+
+.modal {
+	margin: auto;
+	background-color: $page-background-color;
+	position: relative;
+	display: none;
+	.btn-close {
+		font-family: $icon-font;
+		font-size: $paragraph-font-size2;
+		color: $paragraph-color;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 17px 20px;
+	}
+}
+
+.modal-add {
+	width: calc(100vw - 100px);
+	margin-top: 0;
+}
+
+.modal.show-popup {
+	display: block;
+}
+
+.cursor-change:hover {
+	cursor: pointer;
+}
+
+// scrollbar style
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar-track {
+	background-color: $scrollbar-background-color;
+}
+::-webkit-scrollbar-thumb {
+	background-color: $scrollbar-color;
+}
+
+@media(max-width: 767px) {
+	@include grid('sm');
+	.overlay {
+		padding: 25px;
+	}
+	.container {
+		margin: 0 0 0 63px;
+		height: 100vh;
+	}
+	.view-page {
+		margin: 5px;
+	}
+}
+
+@media(min-width: 768px) {
+	@include grid('md');
+	.overlay {
+		padding: 50px;
+	}
+	.container {
+		margin: 60px 0 0 200px;
+		height: calc(100vh - 60px);
+	}
+	.view-page {
+		margin: 10px;
+	}
+}
+
+@media(min-width: 992px) {
+	@include grid('lg');
+	.overlay {
+		padding: 75px;
+	}
+	.view-page {
+		margin: 20px;
+	}
+}
+
+@media(min-width: 1200px) {
+	@include grid('xl');
+	.overlay {
+		padding: 100px;
+	}
+}
